@@ -9,6 +9,9 @@ import co.fusionx.spotify.model.Artist;
 
 public class JacksonArtist extends JacksonSimpleArtist implements Artist {
 
+    @JsonProperty(value = "followers")
+    private JacksonFollowers mFollowers;
+
     @JsonProperty(value = "genres")
     private Set<String> mGenres;
 
